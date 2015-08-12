@@ -56,8 +56,228 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
-set_location_assignment PIN_M9 -to clk_i
-set_location_assignment PIN_U1 -to led0
+
+# set_location_assignment PIN_M9 -to clk_i
+# set_location_assignment PIN_U1 -to led0
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to led0
+
+
+## pin assignment
+set_location_assignment	U1	-to	USER_LED0
+set_location_assignment	N2	-to	USER_LED1
+set_location_assignment	U2	-to	USER_LED2
+set_location_assignment	W2	-to	USER_LED3
+set_location_assignment	AA1	-to	USER_LED4
+set_location_assignment	Y3	-to	USER_LED5
+set_location_assignment	AA2	-to	USER_LED6
+set_location_assignment	N1	-to	USER_LED7
+			
+			
+# set_location_assignment	E2	-to	SDCMD
+# set_location_assignment	L1	-to	SDCLK
+# set_location_assignment	D3	-to	SDD0
+# set_location_assignment	L2	-to	SDD1
+# set_location_assignment	C1	-to	SDD2
+# set_location_assignment	C2	-to	SDD3
+# # set_location_assignment		-to	SDCARDDETECT
+# 			
+# 			
+# set_location_assignment	V13	  -to	P1
+# set_location_assignment	AB12	-to	P2
+# set_location_assignment	AA13	-to	P3
+# set_location_assignment	AA14	-to	P4
+# set_location_assignment	Y14	  -to	P5
+# set_location_assignment	AB15	-to	P6
+# set_location_assignment	AA15	-to	P7
+# set_location_assignment	Y15	  -to	P8
+# set_location_assignment	Y16	  -to	P9
+# set_location_assignment	AB17	-to	P10
+# set_location_assignment	AA17	-to	P11
+# set_location_assignment	Y17	  -to	P12
+# set_location_assignment	AB18	-to	P13
+# set_location_assignment	AA18	-to	P14
+# set_location_assignment	AA19	-to	P15
+# set_location_assignment	Y19	  -to	P16
+# set_location_assignment	AB20	-to	P17
+# set_location_assignment	Y20	  -to	P18
+# set_location_assignment	AA20	-to	P19
+# set_location_assignment	AB22	-to	P20
+# set_location_assignment	AB21	-to	P21
+# set_location_assignment	AA22	-to	P22
+# set_location_assignment	Y22	  -to	P23
+# set_location_assignment	Y21	  -to	P24
+# set_location_assignment	W22	  -to	P25
+# set_location_assignment	W21	  -to	P26
+# set_location_assignment	V21	  -to	P27
+# set_location_assignment	U22	  -to	P28
+# set_location_assignment	U21	  -to	P29
+# set_location_assignment	N9	  -to	P35
+# set_location_assignment	P9	  -to	P36
+# set_location_assignment	M7	  -to	P37
+# set_location_assignment	M6	  -to	P38
+# set_location_assignment	N6	  -to	P39
+# set_location_assignment	P6	  -to	P40
+# set_location_assignment	R5	  -to	P41
+# set_location_assignment	R6	  -to	P42
+# set_location_assignment	T7	  -to	P43
+# set_location_assignment	T8	  -to	P44
+# set_location_assignment	P14	  -to	P45
+# set_location_assignment	R14	  -to	P46
+# set_location_assignment	T12	  -to	P47
+# set_location_assignment	T13	  -to	P48
+# set_location_assignment	T14	  -to	P49
+# set_location_assignment	V14	  -to	P50
+# set_location_assignment	V15	  -to	P51
+# set_location_assignment	U15	  -to	P52
+# set_location_assignment	U16	  -to	P53
+# set_location_assignment	U17	  -to	P54
+# set_location_assignment	V18	  -to	P55
+# set_location_assignment	W19	  -to	P56
+# set_location_assignment	V19	  -to	P57
+# set_location_assignment	V20	  -to	P58
+# set_location_assignment	U20	  -to	P59
+# set_location_assignment	P18	  -to	P60
+# set_location_assignment	U13	  -to	RESET_EXP
+# set_location_assignment	P19	  -to	EXP_PRESENT
+# 			
+# 			
+# set_location_assignment	T22	  -to	GPIO_01
+# set_location_assignment	T15	  -to	GPIO_02
+# set_location_assignment	R22	  -to	GPIO_03
+# set_location_assignment	R15	  -to	GPIO_04
+# set_location_assignment	R21	  -to	GPIO_05
+# set_location_assignment	R16	  -to	GPIO_06
+# set_location_assignment	P22	  -to	GPIO_07
+# set_location_assignment	R17	  -to	GPIO_08
+# set_location_assignment	N20	  -to	DIFF_TX_5_P
+# set_location_assignment	N21	  -to	DIFF_TX_5_N
+# set_location_assignment	M22	  -to	DIFF_TX_6_P
+# set_location_assignment	L22	  -to	DIFF_TX_6_N
+# set_location_assignment	M20	  -to	DIFF_TX_7_P
+# set_location_assignment	M21	  -to	DIFF_TX_7_N
+# set_location_assignment	K21	  -to	DIFF_TX_8_P
+# set_location_assignment	K22	  -to	DIFF_TX_8_N
+# set_location_assignment	T19	  -to	DIFF_TX_9_P
+# set_location_assignment	T20	  -to	DIFF_TX_9_N
+# set_location_assignment	T18	  -to	DIFF_RX_9_P
+# set_location_assignment	T17	  -to	DIFF_RX_9_N
+# set_location_assignment	L19	  -to	DIFF_RX_8_P
+# set_location_assignment	L18	  -to	DIFF_RX_8_N
+# set_location_assignment	K17	  -to	DIFF_RX_7_P
+# set_location_assignment	L17	  -to	DIFF_RX_7_N
+# set_location_assignment	N19	  -to	DIFF_RX_6_P
+# set_location_assignment	M18	  -to	DIFF_RX_6_N
+# set_location_assignment	N16	  -to	DIFF_RX_5_P
+# set_location_assignment	M16	  -to	DIFF_RX_5_N
+# set_location_assignment	U10	  -to	DIFF_RX_4_P
+# set_location_assignment	T9	  -to	DIFF_RX_4_N
+# set_location_assignment	R9	  -to	DIFF_RX_3_P
+# set_location_assignment	T10	  -to	DIFF_RX_3_N
+# set_location_assignment	U12	  -to	DIFF_RX_2_P
+# set_location_assignment	U11	  -to	DIFF_RX_2_N
+# set_location_assignment	R11	  -to	DIFF_RX_1_P
+# set_location_assignment	R10	  -to	DIFF_RX_1_N
+# 			
+# 			
+# set_location_assignment	G1	  -to	I2C_SDA
+# set_location_assignment	G2	  -to	I2C_SCL
+# set_location_assignment	V10	  -to	GPIO_A
+# set_location_assignment	P8	  -to	GPIO_B
+# set_location_assignment	R7	  -to	LVDS_TX_E4_N
+# set_location_assignment	P7	  -to	LVDS_TX_E4_P
+# set_location_assignment	W8	  -to	LVDS_TX_E3_N
+# set_location_assignment	W9	  -to	LVDS_TX_E3_P
+# set_location_assignment	U6	  -to	LVDS_TX_ECLK_N
+# set_location_assignment	V6	  -to	LVDS_TX_ECLK_P
+# set_location_assignment	U7	  -to	LVDS_TX_E2_N
+# set_location_assignment	U8	  -to	LVDS_TX_E2_P
+# set_location_assignment	AA7	  -to	LVDS_TX_E1_N
+# set_location_assignment	AB7	  -to	LVDS_TX_E1_P
+# set_location_assignment	AB6	  -to	LVDS_TX_E0_N
+# set_location_assignment	AB5	  -to	LVDS_TX_E0_P
+# set_location_assignment	AA8	  -to	LVDS_TX_O4_N
+# set_location_assignment	AB8	  -to	LVDS_TX_O4_P
+# set_location_assignment	AA10  -to	LVDS_TX_O3_N
+# set_location_assignment	AA9	  -to	LVDS_TX_O3_P
+# set_location_assignment	Y10	  -to	LVDS_TX_OCLK_N
+# set_location_assignment	Y9	  -to	LVDS_TX_OCLK_P
+# set_location_assignment	R12	  -to	LVDS_TX_O2_N
+# set_location_assignment	P12	  -to	LVDS_TX_O2_P
+# set_location_assignment	AB10  -to	LVDS_TX_O1_N
+# set_location_assignment	AB11  -to	LVDS_TX_O1_P
+# set_location_assignment	Y11	  -to	LVDS_TX_O0_N
+# set_location_assignment	AA12  -to	LVDS_TX_O0_P
+# 			
+# 			
+# set_location_assignment	H18	  -to	Tact1
+# set_location_assignment	J18	  -to	Tact2
+# 			
+# 			
+# set_location_assignment	L7	  -to	mem_a[0]
+# set_location_assignment	K7	  -to	mem_a[1]
+# set_location_assignment	H8	  -to	mem_a[2]
+# set_location_assignment	G8	  -to	mem_a[3]
+# set_location_assignment	J7	  -to	mem_a[4]
+# set_location_assignment	J8	  -to	mem_a[5]
+# set_location_assignment	A10	  -to	mem_a[6]
+# set_location_assignment	A9	  -to	mem_a[7]
+# set_location_assignment	A8	  -to	mem_a[8]
+# set_location_assignment	A7	  -to	mem_a[9]
+# set_location_assignment	C6	  -to	mem_a[10]
+# set_location_assignment	D6	  -to	mem_a[11]
+# set_location_assignment	D7	  -to	mem_a[12]
+# set_location_assignment	C8	  -to	mem_a[13]
+# set_location_assignment	A5	  -to	mem_ba[0]
+# set_location_assignment	B10	  -to	mem_ba[1]
+# set_location_assignment	C9	  -to	mem_ba[2]
+# set_location_assignment	B6	  -to	mem_cas_n[0]
+# set_location_assignment	J9	  -to	mem_ck[0]
+# set_location_assignment	H9	  -to	mem_ck_n[0]
+# set_location_assignment	F14	  -to	mem_cke[0]
+# set_location_assignment	E9	  -to	mem_cs_n[0]
+# set_location_assignment	G11	  -to	mem_dm[0]
+# set_location_assignment	J17	  -to	mem_dm[1]
+# set_location_assignment	E12	  -to	mem_dq[0]
+# set_location_assignment	D12	  -to	mem_dq[1]
+# set_location_assignment	C11	  -to	mem_dq[2]
+# set_location_assignment	K9	  -to	mem_dq[3]
+# set_location_assignment	C13	  -to	mem_dq[4]
+# set_location_assignment	D13	  -to	mem_dq[5]
+# set_location_assignment	B12	  -to	mem_dq[6]
+# set_location_assignment	F12	  -to	mem_dq[7]
+# set_location_assignment	F13	  -to	mem_dq[8]
+# set_location_assignment	E14	  -to	mem_dq[9]
+# set_location_assignment	J11	  -to	mem_dq[10]
+# set_location_assignment	A13	  -to	mem_dq[11]
+# set_location_assignment	B15	  -to	mem_dq[12]
+# set_location_assignment	C15	  -to	mem_dq[13]
+# set_location_assignment	G15	  -to	mem_dq[14]
+# set_location_assignment	K16	  -to	mem_dq[15]
+# set_location_assignment	H11	  -to	mem_dqs[0]
+# set_location_assignment	H14	  -to	mem_dqs[1]
+# set_location_assignment	G12	  -to	mem_dqs_n[0]
+# set_location_assignment	J13	  -to	mem_dqs_n[1]
+# set_location_assignment	L8	  -to	mem_odt[0]
+# set_location_assignment	B7	  -to	mem_ras_n[0]
+# set_location_assignment	J19	  -to	mem_reset_n
+# set_location_assignment	F7	  -to	mem_we_n[0]
+# set_location_assignment	B11	  -to	oct_rzqin
+# 			
+# 			
+# set_location_assignment	P16	  -to	EEPROM_SDA
+# set_location_assignment	P17	  -to	EEPROM_SCL
+# 			
+# 			
+# set_location_assignment	H13	  -to	DDR3_CLK_50MHz
+# 			
+# 			
+# set_location_assignment	V16	  -to	CLK_50MHz
+			
+			
+set_location_assignment	M9	  -to	CLK_24MHz
+
+
+## configuration to FPGA
 set_global_assignment -name CDF_FILE output_files/Chain.cdf
+
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
