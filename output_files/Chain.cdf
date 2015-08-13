@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(5CEFA2) Path("C:/Users/Yasuhide/proj/bemicrocv-base/output_files/") File("output_file.jic") MfrSpec(OpMask(1) SEC_Device(EPCS16) Child_OpMask(1 1));
+		Device PartName(5CEFA2F23) Path("C:/Users/Yasuhide/proj/bemicrocv-base/output_files/") File("bemicrocv-base.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
