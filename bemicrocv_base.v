@@ -32,6 +32,7 @@ parameter ST_LED7  = 4'h8;
 
 // LED reassign
 reg [4:11] LED;
+<<<<<<< HEAD
 assign     USER_LED4 = LED[6];
 assign     USER_LED5 = LED[4];
 assign     USER_LED6 = LED[5];
@@ -41,6 +42,16 @@ assign     USER_LED1 = LED[10];
 assign     USER_LED2 = LED[8];
 assign     USER_LED3 = LED[7];
 // 4 5 6 7 0   1 2 3 
+=======
+assign     USER_LED4 = LED[4];
+assign     USER_LED5 = LED[5];
+assign     USER_LED6 = LED[6];
+assign     USER_LED7 = LED[7];
+assign     USER_LED0 = LED[8];
+assign     USER_LED1 = LED[9];
+assign     USER_LED2 = LED[10];
+assign     USER_LED3 = LED[11];
+>>>>>>> d39a37eecb7ea24f0f9425b05215822744989174
 // 6 4 5 11 9 10 8 7
 // counter
 parameter       W_CNT = 23;
