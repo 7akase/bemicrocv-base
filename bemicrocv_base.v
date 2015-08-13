@@ -1,4 +1,5 @@
 module bemicrocv_base(CLK_24MHz, Tact1, 
+<<<<<<< master
                       USER_LED0, USER_LED1, USER_LED2);
 
 input CLK_24MHz;
@@ -6,6 +7,21 @@ input Tact1;
 output USER_LED0;
 output USER_LED1;
 output USER_LED2;
+=======
+                      USER_LED_D4, USER_LED_D5, USER_LED_D6, USER_LED_D7,
+                      USER_LED_D8, USER_LED_D9, USER_LED_D10, USER_LED_D11);
+
+input CLK_24MHz;
+input Tact1;
+output USER_LED_D4;
+output USER_LED_D5;
+output USER_LED_D6;
+output USER_LED_D7;
+output USER_LED_D8;
+output USER_LED_D9;
+output USER_LED_D10;
+output USER_LED_D11;
+>>>>>>> local
 
 parameter TACT_ON  = 1'b0;
 parameter TACT_OFF = 1'b1;
@@ -17,6 +33,19 @@ parameter ST_LED0  = 2'h1;
 parameter ST_LED1  = 2'h2;
 parameter ST_LED2  = 2'h3;
 
+<<<<<<< master
+=======
+// LED reassign
+reg [4:11] LED;
+assign     USER_LED_D4  = LED[4];
+assign     USER_LED_D5  = LED[5];
+assign     USER_LED_D6  = LED[6];
+assign     USER_LED_D7  = LED[7];
+assign     USER_LED_D8  = LED[8];
+assign     USER_LED_D9  = LED[9];
+assign     USER_LED_D10 = LED[10];
+assign     USER_LED_D11 = LED[11];
+>>>>>>> local
 
 parameter W_CNT = 23;
 
