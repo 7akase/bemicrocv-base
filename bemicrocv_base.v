@@ -2,6 +2,7 @@ module bemicrocv_base(CLK_24MHz, Tact1,
                       USER_LED0, USER_LED1, USER_LED2, USER_LED3,
                       USER_LED4, USER_LED5, USER_LED6, USER_LED7);
 
+                      
 input CLK_24MHz;
 input Tact1;
 output USER_LED0;
