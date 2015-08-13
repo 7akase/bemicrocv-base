@@ -40,8 +40,7 @@ assign     USER_LED0 = LED[9];
 assign     USER_LED1 = LED[10];
 assign     USER_LED2 = LED[8];
 assign     USER_LED3 = LED[7];
-// 4 5 6 7 0   1 2 3 
-// 6 4 5 11 9 10 8 7
+
 // counter
 parameter       W_CNT = 23;
 reg [W_CNT-1:0] cnt;
